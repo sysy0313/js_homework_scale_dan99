@@ -1,23 +1,92 @@
-h1 {}
-#danFrm {}
-#danFrm fieldset {}
-#danFrm fieldset .big {}
-#danFrm fieldset #dan2 {background:pink;}
-#danFrm fieldset #dan2Btn {}
-#danFrm fieldset ul {}
-#danFrm fieldset ul li {}
-#danFrm fieldset ul li span {}
-#danFrm fieldset ul li .que {background:orange;}
-#danFrm fieldset ul li .result {
-    width:70px; height:50px;
-    background:blue; display:inline-block;}
-#danFrm fieldset ul li button {width:50px; height:50px;}
-#danFrm fieldset ul li #dan2_1 {}
-#danFrm fieldset ul li #dan2_2 {}
-#danFrm fieldset ul li #dan2_3 {}
-#danFrm fieldset ul li #dan2_4 {}
-#danFrm fieldset ul li #dan2_5 {}
-#danFrm fieldset ul li #dan2_6 {}
-#danFrm fieldset ul li #dan2_7 {}
-#danFrm fieldset ul li #dan2_8 {}
-#danFrm fieldset ul li #dan2_9 {}
+main {
+    height:100vh;
+    display:flex; flex-flow:column nowrap; align-items:center;
+    background:url(../images/math_bg.jpg) no-repeat;
+    background-size:cover;
+}
+main h1 {
+    margin-top:70px; font-weight:700; color:#222;
+    font-size:5rem; text-align:center; line-height:90px; margin-bottom:35px;
+    animation:main_title 1s linear alternate infinite;
+}
+main h1 em {font-size:5rem; color:#FF0060; font-weight:700;}
+main #danFrm {
+    border-radius:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+main #danFrm fieldset {}
+main #danFrm fieldset .top {
+    background:#ffd7d6; padding:10px 0; border-top-left-radius:20px; border-top-right-radius:20px;
+    display:flex; flex-flow:row nowrap; align-items:center; justify-content:center;
+}
+main #danFrm fieldset .top .big {font-size:4.5rem; font-weight:700; height:100px; line-height:100px; margin-right:25px;}
+main #danFrm fieldset .top #dan2 {
+    background:#F8F988; width:85px; height:85px; border-radius:20px;
+    font-size:4.5rem; font-weight:700; text-align:center; line-height:85px; color:#222;
+}
+main #danFrm fieldset .top #dan2Btn {
+    width:100px; height:100px;
+    font-size:5rem; font-weight:700; background:none;
+}
+main #danFrm fieldset .top #dan2Btn:hover {color:#00DFA2;}
+main #danFrm fieldset .top #top_result {
+    background:#C0EEE4; display:inline-block; width:85px; height:85px; border-radius:20px;
+    font-size:4.5rem; font-weight:700; color:#222; text-align:center; line-height:85px;
+    margin-right:40px;
+}
+main #danFrm fieldset .top #top_reset {
+    background:none; width:70px; height:70px;
+    transition:1.5s linear;
+}
+main #danFrm fieldset .top #top_reset img {width:100%;}
+main #danFrm fieldset .top #top_reset:hover {
+    transform:rotate(360deg)
+}
+main #danFrm fieldset .btm {
+    background:#fff; padding:30px 30px;
+    border-bottom-left-radius:20px; border-bottom-right-radius:20px;
+    position:relative;
+}
+main #danFrm fieldset .btm ul {
+    display:flex; flex-flow:column wrap; align-items:center;
+    width:1000px; height:350px;
+}
+main #danFrm fieldset .btm ul li {
+    display:flex; flex-flow:row nowrap; align-items:center;
+    margin-bottom:10px;
+}
+main #danFrm fieldset .btm ul li span {}
+main #danFrm fieldset .btm ul li .result {
+    width:70px; height:50px; border-radius:10px;
+    font-size:3.5rem; color:#222; font-weight:700; text-align:center; line-height:50px;
+    background:#C0EEE4;; display:inline-block;}
+main #danFrm fieldset .btm ul li .dan2Btn_num {
+    width:180px; height:50px; font-size:3rem; font-weight:700; background:none;}
+main #danFrm fieldset .btm ul li .dan2Btn_num:hover {
+    color:#00DFA2;
+}
+main #danFrm fieldset .btm ul li .dan2Btn_1 {}
+main #danFrm fieldset .btm ul li .dan2Btn_2 {}
+main #danFrm fieldset .btm ul li .dan2Btn_3 {}
+main #danFrm fieldset .btm ul li .dan2Btn_4 {}
+main #danFrm fieldset .btm ul li .dan2Btn_5 {}
+main #danFrm fieldset .btm ul li .dan2Btn_6 {}
+main #danFrm fieldset .btm ul li .dan2Btn_7 {}
+main #danFrm fieldset .btm ul li .dan2Btn_8 {}
+main #danFrm fieldset .btm ul li .dan2Btn_9 {}
+main #danFrm fieldset .btm #view {position:absolute; bottom:20px; right:20px;}
+main #danFrm fieldset .btm #reset {position:absolute; bottom:20px; right:130px;}
+main #danFrm fieldset .btm #view,
+main #danFrm fieldset .btm #reset {
+    background:#FF9E9E; width:100px; height:50px; border-radius:10px;
+    font-size:1.5rem; font-weight:700; color:#fff;
+}
+main #danFrm fieldset .btm #view:hover,
+main #danFrm fieldset .btm #reset:hover {
+    background:#00DFA2;
+}
+/* 키프레임 */
+@keyframes main_title {
+    0% {transform:scale(1);}
+    100% {transform:scale(1.1);}
+}

@@ -1,15 +1,52 @@
-main {display:flex; flex-flow:column nowrap; align-items:center;}
-main h1 {text-align:center; margin:100px 0 100px; font-size:5rem; font-weight:700;}
-main > p {text-align:center; font-size:3rem; font-weight:500; margin-bottom:100px; }
-main form {}
-main form fieldset {text-align:center;}
-main form fieldset ul {margin-bottom:50px; display:flex; flex-flow:column nowrap; align-items:flex-start; }
+main {
+    background:url(../images/medi_bg.jpg) no-repeat top;
+    background-size:cover; height:100vh;
+    display:flex; flex-flow:column nowrap; align-items:center;}
+main h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    text-align:center; margin:130px 0 60px; font-size:5rem; letter-spacing:-0.04em;
+    color:#589300;
+}
+main > p { font-size:2.8rem; font-weight:400; letter-spacing:-0.02em; line-height:65px;
+    text-align:center; margin-bottom:60px; color:#222;}
+main form {margin-bottom:60px;}
+main form fieldset {
+    width:500px;
+    text-align:center; display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+}
+main form fieldset ul {display:flex; flex-flow:column nowrap; align-items:flex-start; }
 main form fieldset ul li {margin-bottom:20px;}
-main form fieldset ul li #user_height {background:skyblue; width:200px; height:30px}
-main form fieldset ul li #user_weight {background:pink;  width:200px; height:30px}
-main form fieldset #scale_btn {width:100px; height:50px; margin-bottom:50px;}
-main .result_border {width:500px; height:200px; background:pink; display:flex; flex-flow:column nowrap;
+main form fieldset ul li:last-child {margin-bottom:0;}
+main form fieldset ul li #user_height {
+    background:#fff; width:250px; height:50px; padding:5px 15px;
+    font-size:1.5rem; border-radius:10px;
+}
+main form fieldset ul li #user_weight {
+    background:#fff;  width:250px; height:50px; padding:5px 15px;
+    font-size:1.5rem;  border-radius:10px;
+}
+main form fieldset ul li #user_height::placeholder {letter-spacing:-0.04em;}
+main form fieldset ul li #user_weight::placeholder {letter-spacing:-0.04em;}
+main form fieldset ul li span {
+    margin-left:10px;
+    font-size:2rem; font-weight:700; color:#222;}
+main form fieldset #scale_btn {
+    background:#ff5d0b;
+    width:160px; height:100px; border-radius:10px;
+    font-size:2rem; color:#fff; font-weight:700;
+    transition:0.2s linear;
+}
+main form fieldset #scale_btn:hover {
+    background:#95CD41;
+}
+main .result_border {
+    width:500px; height:150px; background:#fff; border-radius:20px;
+    display:flex; flex-flow:column nowrap;
     align-items:center; justify-content:center;
 }
-main .result_border .result {text-align:center; font-size:1.3rem; margin-bottom:20px;}
-main .result_border .over_weight {text-align:center; font-size:1.3rem; line-height:30px;}
+main .result_border .result {
+    font-size:1.5rem; color:#222; letter-spacing:-0.02em; 
+    text-align:center; margin-bottom:20px; }
+main .result_border .over_weight {
+    font-size:1.5rem; color:#222; letter-spacing:-0.02em;
+    text-align:center; line-height:30px;}

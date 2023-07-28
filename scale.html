@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="적정몸무게, 건강, 다이어트">
+    <meta name="description" content="신장과 비례한 적정 몸무게를 알려드립니다.">
     <title>나의 적정 몸무게는?</title>
-    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/scale_reset.css">
     <link rel="stylesheet" href="./styles/scale.css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/apple.png" type="image/x-icon">
+    <link rel="icon" href="./images/apple.png" type="image/x-icon">
 </head>
 <body>
     <main>
         <h1>나의 적정 몸무게는?</h1>
-        <p>신장과 몸무게를 입력해주세요.<br>적정 몸무게를 알려드립니다.</p>
+        <p>신장과 체중을 입력해주세요.<br>나의 건강한 체중을 알려드립니다.</p>
         <form action="#" method="get">
             <fieldset>
                 <legend class="skip">적정몸무게 계산양식</legend>
                 <ul>
                     <li>
-                        <input type="text" id="user_height" placeholder="키를 입력해주세요"> 
+                        <input type="text" id="user_height" placeholder="신장을 입력해주세요" autofocus> 
                         <span>cm</span>
                     </li>
                     <li>
-                        <input type="text" id="user_weight" placeholder="몸무게를 입력해주세요">
+                        <input type="text" id="user_weight" placeholder="체중을 입력해주세요">
                         <span>kg</span>
                     </li>
                 </ul>

@@ -3,67 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="구구단, 2단, 구구단을 외우자">
+    <meta name="description" content="구구단을 재밌게 외울 수 있어요!">
     <title>구구단을 외우자! 2단!</title>
-    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/dan_reset.css">
     <link rel="stylesheet" href="./styles/dan99.css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/numbers.png" type="image/x-icon">
+    <link rel="icon" href="./images/numbers.png" type="image/x-icon">
 </head>
 <body>
-    <h1>구구단을 외우자! 2단을 외우자!</h1>
-    <form action="#" method="get" id="danFrm">
-        <fieldset>
-            <legend class="skip">구구단2단양식</legend>
-            <span class="big">2 X</span>
-            <input type="text" id="dan2">
-            <button type="submit" id="dan2Btn">=</button>
-            <ul>
-                <li>
-                    <span class="que">2X1</span>
-                    <button type="button" id="dan2Btn_1">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X2</span>
-                    <button type="button" id="dan2Btn_2">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X3</span>
-                    <button type="button" id="dan2Btn_3">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X4</span>
-                    <button type="button" id="dan2Btn_4">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X5</span>
-                    <button type="button" id="dan2Btn_5">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X6</span>
-                    <button type="button" id="dan2Btn_6">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X7</span>
-                    <button type="button" id="dan2Btn_7">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X8</span>
-                    <button type="button" id="dan2Btn_8">=</button>
-                    <span class="result"></span>
-                </li>
-                <li>
-                    <span class="que">2X9</span>
-                    <button type="button" id="dan2Btn_9">=</button>
-                    <span class="result"></span>
-                </li>
-            </ul>
-        </fieldset>
-    </form>
+    <main>
+        <h1>
+            <em>구구단</em>을 외우자!<br><em>2단</em>을 외우자!</h1>
+        <form action="#" method="get" id="danFrm">
+            <fieldset>
+                <legend class="skip">구구단2단양식</legend>
+                <div class="top">
+                    <span class="big">2 X</span>
+                    <input type="text" id="dan2" autofocus>
+                    <button type="button" id="dan2Btn" title="계산하기">=</button>
+                    <span id="top_result"></span>
+                    <button type="button" id="top_reset" title="다시하기"><img src="./images/Refresh.png" alt=""></button>
+                </div>
+                <div class="btm">
+                    <ul>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_1" title="계산하기">2X1 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_2" title="계산하기">2X2 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_3" title="계산하기">2X3 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_4" title="계산하기">2X4 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_5" title="계산하기">2X5 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_6" title="계산하기">2X6 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_7" title="계산하기">2x7 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_8" title="계산하기">2X8 =</button>
+                            <span class="result"></span>
+                        </li>
+                        <li>
+                            <button type="button" class="dan2Btn_num dan2Btn_9" title="계산하기">2X9 =</button>
+                            <span class="result"></span>
+                        </li>
+                    </ul>
+                    <button type="button" id="view">정답보기</button>
+                    <button type="button" id="reset">다시하기</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
     <script src="./script/dan99.js"></script>
 </body>
 </html>
