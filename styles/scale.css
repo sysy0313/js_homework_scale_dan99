@@ -1,0 +1,7 @@
+h1 {text-align:center; margin:200px 0 100px; font-size:5rem; font-weight:700;}
+p {text-align:center; font-size:3rem; font-weight:500; margin-bottom:100px; }
+form {}
+form fieldset {text-align:center;}
+form fieldset #user_height {background:skyblue; width:200px; height:30px}
+form fieldset #user_weight {background:pink;  width:200px; height:30px}
+form fieldset #scale_btn {}

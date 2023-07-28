@@ -1,0 +1,1 @@
+// 변수생성 : input, dan2Btn, dan2Btn_1 ~ dan2Btn_9
