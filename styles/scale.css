@@ -1,7 +1,15 @@
-h1 {text-align:center; margin:200px 0 100px; font-size:5rem; font-weight:700;}
-p {text-align:center; font-size:3rem; font-weight:500; margin-bottom:100px; }
-form {}
-form fieldset {text-align:center;}
-form fieldset #user_height {background:skyblue; width:200px; height:30px}
-form fieldset #user_weight {background:pink;  width:200px; height:30px}
-form fieldset #scale_btn {}
+main {display:flex; flex-flow:column nowrap; align-items:center;}
+main h1 {text-align:center; margin:100px 0 100px; font-size:5rem; font-weight:700;}
+main > p {text-align:center; font-size:3rem; font-weight:500; margin-bottom:100px; }
+main form {}
+main form fieldset {text-align:center;}
+main form fieldset ul {margin-bottom:50px; display:flex; flex-flow:column nowrap; align-items:flex-start; }
+main form fieldset ul li {margin-bottom:20px;}
+main form fieldset ul li #user_height {background:skyblue; width:200px; height:30px}
+main form fieldset ul li #user_weight {background:pink;  width:200px; height:30px}
+main form fieldset #scale_btn {width:100px; height:50px; margin-bottom:50px;}
+main .result_border {width:500px; height:200px; background:pink; display:flex; flex-flow:column nowrap;
+    align-items:center; justify-content:center;
+}
+main .result_border .result {text-align:center; font-size:1.3rem; margin-bottom:20px;}
+main .result_border .over_weight {text-align:center; font-size:1.3rem; line-height:30px;}
