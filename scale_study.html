@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적정몸무게</title>
+</head>
+<body>
+    <h1>다이어트체중계</h1>
+    <p>당신의 건강몸무게를 알아보세요!</p>
+    <ul>
+        <li>현재키: <input type="text" id="height"></li>
+        <li>현재몸무게:<input type="text" id="weight"></li>
+        <li>목표몸무게: <input type="text" id="normal" readonly></li>
+        <li>최종감량목표 <input type="text" id="weight2" readonly></li>
+    </ul>
+    <button id="result" type="button">결과보기</button>
+    <script>
+        const userHeight = document.querySelector('#height')
+        const userWeight = document.querySelector('#weight')
+        const normal = document.querySelector('#normal')
+        const weight2 = document.querySelector('#weight2')
+        const resultBtn = document.querySelector('#result')
+        console.log(userHeight, userWeight, normal, weight2, resultBtn)
+        resultBtn.addEventListener('click', function(){
+            // 1. 사용자가 입력한 키와 몸무게 정보 받아오기
+            let userH = Number(userHeight.value) //str->number
+            let userW = Number(userWeight.value)
+            console.log(userH, userW)
+            let normal_w = (userH-100)*0.9 //적정체중 저장 변수
+            console.log(normal_w)
+            normal.value = normal_w +'kg' //목표몸무게 칸 변수삽입
+            let resultW = userW-normal_w //몸무게 변환변수 - 평균 무게 변수
+            console.log(resultW)
+            weight2.value = resultW + 'kg'
+            
+        })
+    </script>
+</body>
+</html>
